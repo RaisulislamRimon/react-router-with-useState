@@ -3,14 +3,17 @@ import React, { useState } from 'react';
 const Contact3 = () => {
   const [user, setUser] = useState({name: '', password: ''});
   const {name, password} = user;
+  // const handleChange = (e) => {
+  //   console.log(e.target.name, e.target.value);
+  //   if (e.target.name === 'name') {
+  //     setUser({name: e.target.value, password})
+  //   }
+  //   if (e.target.name === 'password') {
+  //     setUser({name, password: e.target.value});
+  //   }
+  // }
   const handleChange = (e) => {
-    console.log(e.target.name, e.target.value);
-    if (e.target.name === 'name') {
-      setUser({name: e.target.value, password})
-    }
-    if (e.target.name === 'password') {
-      setUser({name, password: e.target.value});
-    }
+    setUser({...user, [e.target.name]: e.target.value})
   }
   const handleSubmit = (e) => {
    console.log(user)
