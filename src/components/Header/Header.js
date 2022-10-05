@@ -10,6 +10,8 @@ const Header = () => {
         <Link to="/contact" className="text-white no-underline">Contact</Link>
         <Link to="/contact2" className="text-white no-underline">Contact2</Link>
         <Link to="/contact3" className="text-white no-underline">Contact3</Link>
+        <Link to="/childdata" className="text-white no-underline">ChildData</Link>
+        <Link to="/parentdata" className="text-white no-underline">ParentData</Link>
       </ul>
     </div>
   );
