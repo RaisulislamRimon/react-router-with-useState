@@ -9,6 +9,7 @@ import Contact2 from "./components/Contact2/Contact2";
 import Contact3 from "./components/Contact3/Contact3";
 import ChildData from "./components/ChildData/ChildData";
 import ParentData from "./components/ParentData/ParentData";
+import ToDo from "./components/ToDo/ToDo";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -23,6 +24,7 @@ const App = () => {
         { path: "/contact3", element: <Contact3 /> },
         { path: "/childdata", element: <ChildData /> },
         { path: "/parentdata", element: <ParentData /> },
+        { path: "/todo", element: <ToDo /> },
       ],
     },
   ]);
